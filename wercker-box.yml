@@ -1,5 +1,5 @@
 name: ffmpeg-ruby-rvm
-version: 0.0.3
+version: 0.0.4
 inherits: wercker/rvm@1.0.2
 type: box
 platform: ubuntu@12.04
