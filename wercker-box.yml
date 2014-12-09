@@ -1,9 +1,9 @@
 name: ffmpeg-ruby-rvm
-version: 0.0.1
+version: 0.0.2
 inherits: wercker/rvm@1.0.2
 type: box
 platform: ubuntu@12.04
-description: wercker box with ffmpeg and ruby
+description: wercker box with ffmpeg, sox, libsndfile and ruby
 keywords:
   - ffmpeg
   - ruby
@@ -12,7 +12,7 @@ packages:
   - ffmpeg@1.0.0
 script: |
   sudo apt-get update
-  sudo apt-get -y install autoconf automake build-essential git libass-dev libgpac-dev libsdl1.2-dev libtheora-dev libtool libva-dev libvdpau-dev libvorbis-dev libx11-dev libxext-dev libxfixes-dev pkg-config texi2html zlib1g-dev
+  sudo apt-get -y install autoconf automake build-essential git libass-dev libgpac-dev libsdl1.2-dev libtheora-dev libtool libva-dev libvdpau-dev libvorbis-dev libx11-dev libxext-dev libxfixes-dev pkg-config texi2html zlib1g-dev libsndfile libsox-fmt-all sox libchromaprint-dev
   wget http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz  
   tar xzvf yasm-1.2.0.tar.gz 
   cd yasm-1.2.0 
